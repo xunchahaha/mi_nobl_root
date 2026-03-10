@@ -48,9 +48,10 @@
 
 ## Usage Instructions
 
-### Step 1: KernelSU Loading (Run after each boot)
+### Step 1: KernelSU Loading (Run after each boot from termux)
 
-``` ksu_oneclick.bat
+```
+ksu.sh
 
 ```
 Automatically completes the following 5 steps:
@@ -190,3 +191,4 @@ This script performs the following tasks:
 - **Magisk** **False Detection**: ksu_step2.sh will delete the `$KSU_DIR/bin/magisk` compatibility symbolic link automatically created by ksud; otherwise, the Manager's `hasMagisk()` will falsely report a conflict, causing all modules to become unusable.
 
 **lspd Liveness**: `se` must be used.
+
